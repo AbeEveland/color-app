@@ -10,3 +10,96 @@ body {
   margin: 0;
   min-height: 100%;
 }
+
+.picker {
+  padding: 15px;
+  background: #b12020;
+  border: 1px solid #ddd;
+}
+
+#hue-dial, .sliders, .color {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  vertical-align: middle;
+}
+
+.sliders {
+  margin: 0 30px;
+}
+
+.sliders strong {
+  font-weight: 600;
+  display: block;
+}
+
+.sliders strong span {
+  font-weight: 300;
+}
+
+.sliders div+div {
+  margin-top: 1em;
+}
+
+.color {
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+/** Output Styles **/
+
+.picker-output {
+  padding: 20px 10px 10px;
+  background: #efefef;
+  border: 1px solid #ddd;
+  border-top: none;
+  -webkit-box-shadow: inset 0px 6px 10px -5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0px 6px 10px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 6px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+.picker-output strong {
+  font-weight: bold;
+  display: block;
+}
+
+h1 {
+  color: #112;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px #000, -1px -1px #CCC;
+  font-size: 400%
+}
+
+section {
+  display: flex;
+}
+
+fieldset {
+  border: none;
+  margin: 0 0 0 1rem;
+  padding: 0;
+  display: flex;
+}
+
+fieldset input {
+  width: 30rem;
+}
+
+code {
+  margin-top: 1rem;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
